@@ -73,13 +73,13 @@ game.onUpdateInterval(5000, function () {
     myFuel.setKind(SpriteKind.Gas)
 })
 game.onUpdateInterval(2000, function () {
-    myEnemy = sprites.createProjectileFromSide(assets.image`Spider`, 0, enemySpeed)
+    myEnemy = sprites.createProjectileFromSide(assets.image`UFO`, 0, enemySpeed)
     myEnemy.x = randint(5, 155)
     myEnemy.setKind(SpriteKind.Enemy)
     animation.runImageAnimation(
     myEnemy,
-    assets.animation`Flying Spider`,
-    100,
+    assets.animation`Flying UFO`,
+    200,
     true
     )
 })
